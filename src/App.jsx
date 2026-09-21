@@ -1,5 +1,5 @@
 import './App.css'
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Layout from './Components/Layout/Layout';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
@@ -13,7 +13,7 @@ function App() {
 
 
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {path: '/', element: <Layout/>, children: [
       {index: true, element: <Home/>},
       {path: 'about', element: <About/>},
