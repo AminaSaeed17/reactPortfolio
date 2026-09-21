@@ -1,0 +1,46 @@
+
+
+.user_name{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+.user_position{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.7)
+}
+.user_position span{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgb(44, 152, 240);
+}
+.sidebar_link{
+    position: relative;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7)
+}
+.sidebar_link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: #0d6efd;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.sidebar_link:hover::after {
+  width: 100%;
+}
+
+.sidebar_link.active_link {
+  color: #0d6efd;
+}
