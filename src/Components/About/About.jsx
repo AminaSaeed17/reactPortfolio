@@ -31,17 +31,31 @@ export default function About() {
         style={{ minHeight: "100vh" }}
       >
         <div className="w-75  ">
+          <HeaderSection title="about us" subtitle="who am i?" />
 
-          <HeaderSection title="about us" subtitle="who am i?"/>
-
-          <p className="font-secondary mb-4" style={{color: 'rgba(0, 0, 0, 0.7)'}}>
-            <span style={{fontWeight: '700', fontSize: '15px', lineHeight: '27px'}}>Hi Im Jackson Ford</span> On her way she met a copy. The copy
-            warned the Little Blind Text, that where it came from it would have
-            been rewritten a thousand times and everything that was left from
-            its origin would be the word (and) and the Little Blind Text should
-            turn around and return to its own, safe country.
+          <p
+            className="font-secondary mb-4"
+            style={{ color: "rgba(0, 0, 0, 0.7)" }}
+          >
+            <span
+              style={{
+                fontWeight: "700",
+                fontSize: "15px",
+                lineHeight: "27px",
+              }}
+            >
+              Hi Im Jackson Ford
+            </span>{" "}
+            On her way she met a copy. The copy warned the Little Blind Text,
+            that where it came from it would have been rewritten a thousand
+            times and everything that was left from its origin would be the word
+            (and) and the Little Blind Text should turn around and return to its
+            own, safe country.
           </p>
-          <p className="font-secondary mb-4" style={{color: 'rgba(0, 0, 0, 0.7)'}}>
+          <p
+            className="font-secondary mb-4"
+            style={{ color: "rgba(0, 0, 0, 0.7)" }}
+          >
             Even the all-powerful Pointing has no control about the blind texts
             it is an almost unorthographic life One day however a small line of
             blind text by the name of Lorem Ipsum decided to leave for the far
@@ -54,9 +68,9 @@ export default function About() {
                 key={index}
                 className={`card ${aboutStyle.card} border-0 p-2`}
                 style={{
-                  borderBottom: `3px solid ${skill.color}`,
                   boxShadow: "5px 5px 10px 5px rgba(0,0,0,0.1)",
-                  "--card-color": skill.color
+                  "--card-color": skill.color,
+                  animationDelay: `${index * 0.1}s`,
                 }}
               >
                 <div className="card-body">

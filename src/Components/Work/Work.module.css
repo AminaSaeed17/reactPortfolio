@@ -1,10 +1,21 @@
+.tabsContainer button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  padding-bottom: 6px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid transparent;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
 
-
-
+.tabsContainer button:hover {
+  color: #2c98f0;
+}
 
 .active_tab {
-  color: #2c98f0;
-  border-bottom: 2px solid #2c98f0;
+  color: #2c98f0 !important;
+  border-bottom: 2px solid #2c98f0 !important;
 }
 
 .gallery_animation {

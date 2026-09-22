@@ -1,7 +1,7 @@
 import HeaderSection from "../HeaderSection/HeaderSection";
 import workStyle from "./Work.module.css";
 import { useState } from "react";
-import Gallery from "../Gallery/Gallary";
+import Gallery from "./Gallary";
 
 export default function Work() {
   const [activeTab, setActiveTab] = useState("graphic");
@@ -11,11 +11,11 @@ export default function Work() {
         className="w-100 d-flex justify-content-center align-items-center"
         style={{ minHeight: "100vh" }}
       >
-        <div className="w-75  ">
+        <div className="w-75 mt-5">
           <HeaderSection title="MY WORK" subtitle="RECENT WORK" />
 
       
-          <div className="d-flex gap-4 mb-4">
+          <div className={`d-flex gap-4 mb-4 ${workStyle.tabsContainer}`}>
             <button
               onClick={() => setActiveTab("graphic")}
               className={activeTab === "graphic" ? workStyle.active_tab : ""}
